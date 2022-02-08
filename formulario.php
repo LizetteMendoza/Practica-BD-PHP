@@ -7,9 +7,7 @@
     <title>Formulario</title>
 </head>
 <body>
-    <?php include('conexion.php');?>
-    <h1>Formulario</h1>
-    <ul>
+<ul>
         <li>
         <a href="index.php">Inicio</a>
         </li>
@@ -17,8 +15,9 @@
         <a href="formulario.php">Formulario</a>
         </li>
     </ul>
-    
-    
+    <?php include('conexion.php');?>
+    <h1>Lista de tareas</h1>
+    <div class="contenedor-formulario">
     <form action="insertar.php" method="POST">
         <label for="tarea">Tarea:</label>
         <input type="text" name="tarea">
@@ -35,6 +34,8 @@
         <br><br>
         <input type="submit" value="Enviar">
     </form>
+    </div>
+    
     <br>
 
     <?php
