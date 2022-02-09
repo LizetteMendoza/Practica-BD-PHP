@@ -41,9 +41,5 @@
     <?php
         include('insertar.php');
     ?>
-
-    <?php
-        include('recuperar.php');
-    ?>
 </body>
 </html>
