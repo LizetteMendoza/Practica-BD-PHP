@@ -1,6 +1,4 @@
 <?php
-    include('conexion.php');
-
     echo "<table style='border: solid 1px black;'>";
     echo "<tr><th>Tarea</th><th>Descripción</th><th>Etiqueta</th></tr>";
     
@@ -25,7 +23,7 @@
     
     
     try {
-     
+      include('conexion.php');
         $stmt = $conn->prepare("SELECT tarea, descripcion, etiqueta FROM tareas");
         $stmt->execute();
     
